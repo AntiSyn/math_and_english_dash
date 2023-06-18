@@ -1,0 +1,128 @@
+/* Style for the entire body section */ 
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+/* Styling for the replay button */ 
+#replay {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.2em;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+/* Transition to darker shade of green when hovering above replay button */ 
+#replay:hover {
+    background-color: #45a049;
+}
+/* Background grey color for inputs */ 
+#game-info {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+/* Red color to stand out amongst darker colors */ 
+#timer {
+    font-size: 2em;
+    color: red;
+}
+/* Change font size */ 
+#score, #question {
+    font-size: 1.5em;
+}
+/* Allow answer form to adjust to change in screen size and adjust to the center */ 
+#answer-form {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    align-items: center;
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #ccc;
+}
+
+#answer-form label {
+    margin-right: 10px;
+    font-size: 1.2em;
+}
+
+#answer {
+    margin-right: 10px;
+    padding: 5px;
+    font-size: 1.2em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+/*Styling for the text 'Question:' */
+#word_question {
+    font-size: 1.5em;
+    color: red; 
+}
+
+/* Styling for the submit button */ 
+#submit {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.2em;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+#submit:hover {
+    background-color: #45a049;
+}
+/* Contain the background image of the running track */ 
+#main-content {
+    background-image: url('background.png');
+    background-size: cover;
+    height: 320px;
+    padding-top: 2px;
+}
+/* Styling for bottom Minecraft image */ 
+#support_image {
+    width: 100%;
+    height: 280px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Make the track take up the entire width of the screen */ 
+#track {
+    position: relative;
+    height: 100px;
+    width: 100%;
+    
+}
+/* Style the runners */ 
+.runner {
+    position: absolute;
+    left: 0;
+    width: 45px;
+    height: 70px;
+    background: url('Runner.png') no-repeat center;
+    background-size: cover;
+}
+/* Style the player and opponent's distance down from the top of the screen */ 
+#player {
+    top: 220px;
+}
+
+#opponent1 {
+    top: 100px;
+}

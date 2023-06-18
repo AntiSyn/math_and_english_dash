@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Math & English Challenge</title>
+    
+    <!-- CSS link file -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap">
+</head>
+<body>
+    
+    <div id="motivation">
+        <h2>Get Ready to Be the Cool Kid!</h2>
+        <!-- Game description -->
+        <p> This is a fun game created by Allan Hamawand to develop your skills in Maths and English!</p>
+        <!-- Story context -->
+        <p> Hey future champ! You're in the <strong style="color: red; font-size: 1.2em;">second lane </strong> and are against the nastiest runner of them all, Steve from Minecraft! Get ready to outrun him and the devious creepers lurking in the shadows!</p> 
+        <!-- Difficulty levels -->
+        <p> You have two modes to pick from each with three difficulties. Easy for those who are wishing to slowly improve their skills. Medium for those who want to strive and become better than all. Or Hard mode, a difficulty only for the best who have finetuned their skills to the dot!</p> 
+        <!-- Game explanation -->
+        <p><span id="important_information"> In the Math Game you simply do basic arithmetic (addition, subtraction and multiplication) while in the English Game you must unjumble the words presented above.</span> </p> 
+    </div>
+    
+    <!-- Game container -->
+    <div class="container">
+        <h1>The Math & English Dash!</h1>
+        <!-- Game type selection -->
+        <select id="gameType">
+            <option value="" selected disabled>Choose Mode</option>
+            <option value="math">Math Game</option>
+            <option value="english">English Game</option>
+        </select>
+
+        <!-- Difficulty level selection -->
+        <select id="difficultyLevel">
+            <option value="easy">Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
+        </select>
+<br>
+
+        <button id="start" disabled>Start</button> 
+        <button id="replay" disabled>Replay</button>
+        <button id="submit">Submit</button>
+    </div>
+
+    <!-- JS for game functionality -->
+    <script src="game.js"></script>
+</body>
+</html>

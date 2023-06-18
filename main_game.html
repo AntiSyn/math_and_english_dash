@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Link to the stylesheet -->
+        <link rel="stylesheet" href="main_game.css">
+        <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    </head>
+    <body>
+        <!-- Setup the 'div' container for the elapsed time and score to be presented-->
+        <div id="game-info">
+            <p id="timer">Elapsed Time:</p>
+            <p id="score">Score: 0</p>
+            <p><strong id="word_question">Question: </strong><span id="question"></span></p>
+        </div>
+         
+<!-- Setup the answer form section where the 'Submit' and 'Replay' buttons will be contained-->        
+<div id="answer-form">
+    <form id="answerForm">
+        <label for="answer">Your Answer:</label>
+        <input type="text" id="answer" name="answer">
+        <button type="submit" id="submit">Submit</button>
+        <button id="replay">Replay</button>
+    </form>
+</div>
+
+<!-- Create section for where the main track with the runners will be stored-->
+<div id="main-content">
+    <div id="track">
+        <div class="runner" id="player"></div>
+        <div class="runner" id="opponent1"></div>   
+    </div>
+</div>
+
+<div>
+    <img id="support_image" src="support.png">
+</div>
+
+
+        <!-- Link to the JS file-->
+        <script src="main_game.js"></script>
+        <!-- Fetch the answer inputted into the form within the HTML file for code convenience-->
+        <script>
+        document.getElementById('answerForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+        });
+        </script>
+
+    </body>
+</html>
